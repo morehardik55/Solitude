@@ -35,6 +35,14 @@ h1 {
   line-height: 1.1;
 }
 
+nav{
+font-size: large;
+line-height: normal;
+ background-color:#535bf2 ;
+}
+
+
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -65,4 +73,11 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.journal-card h2 {
+  margin-bottom: 5px;
+}
+.journal-card p {
+  margin: 4px 0;
 }
