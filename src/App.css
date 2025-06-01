@@ -5,24 +5,34 @@
   text-align: center;
 }
 
-nav ul 
-{
+nav ul {
   display: flex;
   list-style: none;
   gap: 20px;
   background-color: #f0f0f0;
   padding: 10px;
+  margin: 0; /* reset default margin */
 }
 
-nav ul li 
-{
+nav ul li {
   font-weight: bold;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #646cff;
 }
 
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #fefefe; /* light background */
 }
 
 .logo {
@@ -31,9 +41,11 @@ body {
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -59,4 +71,16 @@ body {
 
 .read-the-docs {
   color: #888;
+}
+
+.home-container {
+  background-color: #1e1e1e; /* dark background */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
 }
